@@ -60,3 +60,7 @@ The scene's Global Volume uses `Assets/Settings/Global Volume Profile.asset`:
 - I learned that URP post-processing uses a Global Volume, a Volume Profile, and overrides. A Missing Script on a Volume can mean URP is not installed or active.
 - I learned to save the scene and commit from VS Code, and to add a Unity `.gitignore` before committing so `Library`, `Temp`, and `Logs` stay out of Git.
 - I learned that setting `core.autocrlf` to `false` can prevent LF/CRLF warnings on Windows.
+
+## Final Output
+
+![Unity URP sample scene](Screenshots/final-output.png)
