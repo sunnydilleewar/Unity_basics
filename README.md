@@ -17,6 +17,7 @@ It contains a lit sample scene and a reusable emissive cube prefab.
 ## What's in the Scene
 
 - `SampleScene` contains a camera, Cube, Cylinder, Sphere, Ground, and Global Volume.
+- `Assets/crate.fbx` is a low-poly crate model with UVs.
 - The scene uses the `m_sky` procedural skybox material.
 - Material values:
 
@@ -45,7 +46,7 @@ The scene's Global Volume uses `Assets/Settings/Global Volume Profile.asset`:
 - `Assets/Scenes/` — sample scene and scene template.
 - `Assets/Materials/` — PBR, emissive, and skybox materials.
 - `Assets/PreFabs/` — the emissive cube prefab.
-- `Assets/Models/` — no non-generated asset files currently.
+- `Assets/Models/` — reserved for 3D models; the crate model is currently at `Assets/crate.fbx`.
 - `Assets/Textures/` — no non-generated asset files currently.
 - `Assets/Shaders/` — no non-generated asset files currently.
 - `Assets/VFX/` — no non-generated asset files currently.
