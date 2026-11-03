@@ -33,6 +33,12 @@ It contains a lit sample scene and a reusable emissive cube prefab.
 - `Point Light` and `Point Light (1)` are enabled; both have white color, intensity 3, and range 6.
 - The `emmisive_cube` prefab uses the emissive material.
 
+## Crate Model
+
+The low-poly crate was created and UV-unwrapped in Blender, then exported as an FBX and imported into Unity.
+
+![Low-poly crate and UV layout in Blender](Screenshots/crate-blender-uv.png)
+
 ## Post-processing
 
 The scene's Global Volume uses `Assets/Settings/Global Volume Profile.asset`:
