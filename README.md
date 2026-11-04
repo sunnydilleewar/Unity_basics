@@ -35,7 +35,13 @@ It contains a lit sample scene and a reusable emissive cube prefab.
 
 ## Crate Model
 
-The low-poly crate was created and UV-unwrapped in Blender, then exported as an FBX and imported into Unity.
+The crate was modeled and UV-unwrapped in Blender. Normal and ambient occlusion maps were baked from the high-poly mesh onto the low-poly mesh. The re-exported [`Assets/crate.fbx`](Assets/crate.fbx) contains only the low-poly crate mesh.
+The [Blender source](Assets/crate.blend) retains the high- and low-poly meshes for future edits or rebaking.
+
+The [`M_CRATE` material](Assets/Materials/M_CRATE.mat) uses the baked maps:
+
+- [`Crate_Normal.png`](Assets/Textures/Crate_Normal.png) — tangent-space normal map.
+- [`Crate_AO.png`](Assets/Textures/Crate_AO.png) — ambient occlusion map, imported as linear data.
 
 ![Low-poly crate and UV layout in Blender](Screenshots/crate-blender-uv.png)
 
@@ -52,8 +58,8 @@ The scene's Global Volume uses `Assets/Settings/Global Volume Profile.asset`:
 - `Assets/Scenes/` — sample scene and scene template.
 - `Assets/Materials/` — PBR, emissive, and skybox materials.
 - `Assets/PreFabs/` — the emissive cube prefab.
-- `Assets/Models/` — reserved for 3D models; the crate model is currently at `Assets/crate.fbx`.
-- `Assets/Textures/` — no non-generated asset files currently.
+- `Assets/Models/` — reserved for 3D models; the low-poly crate FBX is at `Assets/crate.fbx`.
+- `Assets/Textures/` — baked crate normal and ambient occlusion maps.
 - `Assets/Shaders/` — no non-generated asset files currently.
 - `Assets/VFX/` — no non-generated asset files currently.
 - `Assets/Settings/` — render pipeline assets and Volume Profiles.
